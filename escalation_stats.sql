@@ -20,7 +20,7 @@ WITH exclusions AS (
                          AND jcl.change_to IN ('Closed', 'Done', 'Resolved', 'Rejected')
                          AND LOWER(ji.labels) LIKE '%jira_escalated%'
                          AND jcl.change_date >= CONVERT_TZ('2018-01-01 00:00:00.000', 'UTC', @@session.time_zone)
-                         AND ji.project IN ('Database', 'Documentation', 'Engineering Customer Support', 'MongoDB API', 'Platform', 'SingleStoreDB Cloud')
+                         AND ji.project IN ('[projects')
                        GROUP BY date_trunc('month', jcl.change_date)
                        UNION ALL
                        SELECT Date_TRUNC('month', ji.created_at) AS changeMonth
@@ -29,9 +29,9 @@ WITH exclusions AS (
                        FROM project_management.jira_issues AS ji
                        WHERE Date_Trunc('month', ji.created_at) >= CONVERT_TZ('2018-01-01 00:00:00.000', 'UTC', @@session.time_zone)
                          AND ji.reporter <> 'PagerDuty'
-                         AND ji.reporter_email NOT IN ('psyduck-bot@memsql.com', 'jira-bot@memsql.com')
+                         AND ji.reporter_email NOT IN ('person@email.com', 'person@email.com')
                          AND LOWER(ji.labels) LIKE '%jira_escalated%'
-                         AND ji.project IN ('Database', 'Documentation', 'Engineering Customer Support', 'MongoDB API', 'Platform', 'SingleStoreDB Cloud')
+                         AND ji.project IN ('[projects]')
                        GROUP BY Date_TRUNC('month', ji.created_at)
                    )
 SELECT ai.changeMonth
