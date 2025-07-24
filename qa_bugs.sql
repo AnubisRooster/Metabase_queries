@@ -2,15 +2,15 @@ SELECT
     CONCAT(YEAR(`jira_issues`.`created_at`), '-Q', 
            QUARTER(`jira_issues`.`created_at`)) AS `Fiscal Quarter`,
     COUNT(DISTINCT `jira_issues`.`id`) AS `Total Bugs`,
-    SUM(CASE WHEN `jira_issues`.`reporter` IN ('Inna Murashko', 'Yuliia Nedomirko') THEN 1 ELSE 0 END) AS `QA Bugs`,
-    ROUND((SUM(CASE WHEN `jira_issues`.`reporter` IN ('Inna Murashko', 'Yuliia Nedomirko') THEN 1 ELSE 0 END) / COUNT(DISTINCT `jira_issues`.`id`)) * 100, 2) AS `QA Percentage`
+    SUM(CASE WHEN `jira_issues`.`reporter` IN ('[person]', '[person]') THEN 1 ELSE 0 END) AS `QA Bugs`,
+    ROUND((SUM(CASE WHEN `jira_issues`.`reporter` IN ('[person]', '[person]') THEN 1 ELSE 0 END) / COUNT(DISTINCT `jira_issues`.`id`)) * 100, 2) AS `QA Percentage`
 FROM 
     `jira_issues`
 WHERE 
     (
-        (`jira_issues`.`project` = 'Platform')
-        OR (`jira_issues`.`project` = 'SingleStoreDB Cloud') 
-        OR (`jira_issues`.`project` = 'Web Development')
+        (`jira_issues`.`project` = '[project]')
+        OR (`jira_issues`.`project` = '[project]') 
+        OR (`jira_issues`.`project` = '[project]')
     )
     AND (`jira_issues`.`created_at` >= CONVERT_TZ('2021-01-01 00:00:00.000', 'UTC', @@session.time_zone)) 
     AND (`jira_issues`.`created_at` < CONVERT_TZ('2024-01-01 00:00:00.000', 'UTC', @@session.time_zone))
