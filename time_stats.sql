@@ -25,5 +25,5 @@ select cl.issue_id,
 from jira_change_log cl
          join project_management.jira_issues ji on cl.issue_id = ji.id
 where change_field = 'status'
-  and issue_id = 'DB-63770'     # change the issue number here
+  and issue_id = '[issueID]'     # change the issue number here
 order by change_date;
