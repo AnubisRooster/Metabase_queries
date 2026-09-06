@@ -1,0 +1,67 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "scripts_graphify_pipeline_keep",
+      "label": "keep()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "graphify_pipeline.py",
+      "file_type": "code",
+      "norm_label": "keep()",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L41"
+    },
+    {
+      "id": "scripts_graphify_pipeline",
+      "label": "graphify_pipeline.py",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "graphify_pipeline.py",
+      "file_type": "code",
+      "norm_label": "graphify_pipeline.py",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_graphify_pipeline_rationale_1",
+      "label": "Self-contained graphify pipeline for CI. Builds a knowledge graph over this\u2026",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "graphify_pipeline.py",
+      "file_type": "rationale",
+      "norm_label": "self-contained graphify pipeline for ci. builds a knowledge graph over this...",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L1"
+    }
+  ],
+  "links": [
+    {
+      "source": "scripts_graphify_pipeline",
+      "target": "scripts_graphify_pipeline_keep",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_graphify_pipeline_rationale_1",
+      "target": "scripts_graphify_pipeline",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "5e39d7421e2d2f4147ca0c89aa784bf3db0686d7"
+}
