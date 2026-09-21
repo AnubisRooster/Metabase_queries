@@ -1,10 +1,10 @@
-# Graph Report - Metabase_queries  (2026-09-14)
+# Graph Report - Metabase_queries  (2026-09-21)
 
 ## Corpus Check
 - Corpus is ~11,578 words - fits in a single context window. You may not need a graph.
 
 ## Summary
-- 3 nodes · 2 edges · 1 communities (0 shown, 1 thin omitted)
+- 15 nodes · 14 edges · 1 communities
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
@@ -20,10 +20,14 @@
 ## Import Cycles
 - None detected.
 
-## Communities (1 total, 1 thin omitted)
+## Communities (1 total, 0 thin omitted)
 
-## Knowledge Gaps
-- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+### Community 0 - "graphify_pipeline.py"
+Cohesion: 0.13
+Nodes (13): graphify_analyze, graphify_build, graphify_cluster, graphify_detect, graphify_export, graphify_extract, graphify_llm, graphify_report (+5 more)
 
 ## Suggested Questions
-_Not enough signal to generate questions. This usually means the corpus has no AMBIGUOUS edges, no bridge nodes, no INFERRED relationships, and all communities are tightly cohesive. Add more files or run with --mode deep to extract richer edges._
+_Questions this graph is uniquely positioned to answer:_
+
+- **Should `graphify_pipeline.py` be split into smaller, more focused modules?**
+  _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._

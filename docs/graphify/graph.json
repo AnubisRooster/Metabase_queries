@@ -36,9 +36,285 @@
       "norm_label": "self-contained graphify pipeline for ci. builds a knowledge graph over this...",
       "source_file": "scripts/graphify_pipeline.py",
       "source_location": "L1"
+    },
+    {
+      "id": "graphify_analyze",
+      "label": "graphify_analyze",
+      "community": 0,
+      "community_name": "graphify_pipeline.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "graphify_analyze",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "graphify_build",
+      "label": "graphify_build",
+      "community": 0,
+      "community_name": "graphify_pipeline.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "graphify_build",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "graphify_cluster",
+      "label": "graphify_cluster",
+      "community": 0,
+      "community_name": "graphify_pipeline.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "graphify_cluster",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "graphify_detect",
+      "label": "graphify_detect",
+      "community": 0,
+      "community_name": "graphify_pipeline.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "graphify_detect",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "graphify_export",
+      "label": "graphify_export",
+      "community": 0,
+      "community_name": "graphify_pipeline.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "graphify_export",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "graphify_extract",
+      "label": "graphify_extract",
+      "community": 0,
+      "community_name": "graphify_pipeline.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "graphify_extract",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "graphify_llm",
+      "label": "graphify_llm",
+      "community": 0,
+      "community_name": "graphify_pipeline.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "graphify_llm",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "graphify_report",
+      "label": "graphify_report",
+      "community": 0,
+      "community_name": "graphify_pipeline.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "graphify_report",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "json",
+      "label": "json",
+      "community": 0,
+      "community_name": "graphify_pipeline.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "json",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "os",
+      "label": "os",
+      "community": 0,
+      "community_name": "graphify_pipeline.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "os",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "pathlib",
+      "label": "pathlib",
+      "community": 0,
+      "community_name": "graphify_pipeline.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "pathlib",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "sys",
+      "label": "sys",
+      "community": 0,
+      "community_name": "graphify_pipeline.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "sys",
+      "source_file": "",
+      "type": "external"
     }
   ],
   "links": [
+    {
+      "source": "scripts_graphify_pipeline",
+      "target": "json",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_graphify_pipeline",
+      "target": "os",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_graphify_pipeline",
+      "target": "sys",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_graphify_pipeline",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_graphify_pipeline",
+      "target": "graphify_detect",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_graphify_pipeline",
+      "target": "graphify_extract",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_graphify_pipeline",
+      "target": "graphify_build",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_graphify_pipeline",
+      "target": "graphify_cluster",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_graphify_pipeline",
+      "target": "graphify_analyze",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_graphify_pipeline",
+      "target": "graphify_report",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_graphify_pipeline",
+      "target": "graphify_export",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_graphify_pipeline",
+      "target": "graphify_llm",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L68",
+      "weight": 1.0
+    },
     {
       "source": "scripts_graphify_pipeline",
       "target": "scripts_graphify_pipeline_keep",
@@ -63,5 +339,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "dcedd2f6647412d039bc05b6936a54b450ddcee2"
+  "built_at_commit": "04c7ca16d4d0255fa0fe59448ea4cc7e753cbac4"
 }
