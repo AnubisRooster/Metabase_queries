@@ -1,7 +1,7 @@
-# Graph Report - Metabase_queries  (2026-09-21)
+# Graph Report - Metabase_queries  (2026-09-28)
 
 ## Corpus Check
-- Corpus is ~11,578 words - fits in a single context window. You may not need a graph.
+- Corpus is ~12,740 words - fits in a single context window. You may not need a graph.
 
 ## Summary
 - 15 nodes · 14 edges · 1 communities
