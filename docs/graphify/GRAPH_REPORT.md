@@ -1,15 +1,12 @@
-# Graph Report - Metabase_queries  (2026-09-28)
+# Graph Report - Metabase_queries  (2026-10-05)
 
 ## Corpus Check
 - Corpus is ~12,740 words - fits in a single context window. You may not need a graph.
 
 ## Summary
-- 15 nodes · 14 edges · 1 communities
+- 15 nodes · 14 edges · 1 communities (0 shown, 1 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
-
-## Community Hubs (Navigation)
-- graphify_pipeline.py
 
 ## God Nodes (most connected - your core abstractions)
 1. `Self-contained graphify pipeline for CI. Builds a knowledge graph over this…` - 1 edges
@@ -20,11 +17,10 @@
 ## Import Cycles
 - None detected.
 
-## Communities (1 total, 0 thin omitted)
+## Communities (1 total, 1 thin omitted)
 
-### Community 0 - "graphify_pipeline.py"
-Cohesion: 0.13
-Nodes (13): graphify_analyze, graphify_build, graphify_cluster, graphify_detect, graphify_export, graphify_extract, graphify_llm, graphify_report (+5 more)
+## Knowledge Gaps
+- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
