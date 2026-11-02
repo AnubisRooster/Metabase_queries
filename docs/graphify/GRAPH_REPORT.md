@@ -1,4 +1,4 @@
-# Graph Report - Metabase_queries  (2026-10-26)
+# Graph Report - Metabase_queries  (2026-11-02)
 
 ## Corpus Check
 - Corpus is ~12,844 words - fits in a single context window. You may not need a graph.
